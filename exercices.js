@@ -7,8 +7,8 @@ let sage_potion = 4;
 
 const store = false;
 if (!store){
-    console.log("La boutique des sociers n'est pas encore ouverte. Revenez plus tard ! ")
+    console.log("La boutique des sorciers est fermée, revenez plus tard Aventurier ! 😴")
 }
 else {
-    console.log("La boutique est ouverte. Tu peux entrer ! ")
+    console.log("Bienvenue dans la boutique des sorciers Aventurier ! 🎉")
 }
