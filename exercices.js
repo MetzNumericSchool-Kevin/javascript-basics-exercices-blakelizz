@@ -93,3 +93,13 @@ console.log(pot_liste);
 
 pot_liste.pop()
 console.log(pot_liste);
+
+/*---  Rangeons les informations de la potion de soin dans un objet 🧹*/
+
+let sage = {
+    name:"Sage" ,
+    price: sage_potion,
+    stock: sage_pot_stock_solde,
+}
+console.log(sage)
+
