@@ -71,6 +71,10 @@ console.log("Le stock de potion est de : " + sage_pot_stock_solde);
 
 /*---  Liste des potions*/
 
-let pot_liste = ["Soin", " Bouclier", " Reanimation"];
+let pot_liste = ["Soin", " Bouclier", " Réanimation"];
 
 console.log("Liste des potions  : " + pot_liste)
+
+/*---  Affichage des potions*/
+
+console.log(pot_liste[0]);
