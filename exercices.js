@@ -84,3 +84,7 @@ pot_liste.forEach(function(liste_potion){
     console.log(liste_potion);
 });
 
+/*---   Ajout d'une nouvelle potion*/
+
+pot_liste.push("Endurance");
+console.log(pot_liste)
