@@ -96,10 +96,46 @@ console.log(pot_liste);
 
 /*---  Rangeons les informations de la potion de soin dans un objet 🧹*/
 
-let sage = {
+const sage = {
     name:"Sage" ,
     price: sage_potion,
     stock: sage_pot_stock_solde,
-}
-console.log(sage)
+};
 
+const shield = {
+    name:"Bouclier" ,
+    price: 5,
+    stock: 5,
+};
+
+const rea = {
+    name:"Réanimation" ,
+    price: 10,
+    stock: 11,
+};
+
+console.log(sage);
+
+/*---  Affichons les informations de la potion*/
+
+console.log(sage.name);
+
+console.log(sage['price']);
+
+/*---   C'est l'heure de faire l'inventaire...*/
+
+const inventaire ={
+    sage: {
+        name: "Sage",
+        price: sage_potion,
+        stock: sage_pot_stock_solde
+    }
+};
+
+console.log(inventaire);
+
+/*---  Aventurier, regarde tout ce que je vends !*/
+
+for (const i in inventaire) {
+    console.log(`${i} : ${inventaire[i]}`);
+}
