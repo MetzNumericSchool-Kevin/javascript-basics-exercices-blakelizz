@@ -50,7 +50,17 @@ console.log("- 4. La quantité d'une potion de soin");
 let quantite = prompt("Entrer une quantité de potion de soin : ")
 let quantite_calcule = sage_potion * quantite
 
-console.log("Prix de "+ quantite +" potions de soins : " + quantite_calcule + " 🪙4 mon cher Aventurier. 💸`")
+console.log("Prix de "+ quantite +" potions de soins : " + quantite_calcule + " 🪙 mon cher Aventurier. 💸`")
 
 /*---   Bourse de l'Aventurier 💰*/
 
+let player_coin = 20;
+
+if (player_coin >= quantite_calcule) {
+    console.log("Achat réussi ! Tu as acheté " + quantite +" de potion ");
+    player_coin_solde = player_coin - quantite_calcule
+    console.log("Ton solde est de : " + player_coin_solde + " 🪙 ")
+}
+else{
+    console.log("Achat refusé ! Tu n'as pas assez d'argent. Reviens quand tu auras l'argent !")
+}
