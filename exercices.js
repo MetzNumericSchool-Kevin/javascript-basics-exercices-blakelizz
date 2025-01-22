@@ -58,15 +58,19 @@ let player_coin = 20;
 
 if (player_coin >= quantite_calcule) {
     console.log("Achat réussi ! Tu as acheté " + quantite +" de potion ");
-    player_coin_solde = player_coin - quantite_calcule
-    sage_pot_stock_solde = sage_pot_stock - quantite
+    player_coin_solde = player_coin - quantite_calcule;
+    sage_pot_stock_solde = sage_pot_stock - quantite;
 }
 
 else{
-    console.log("Achat refusé ! Tu n'as pas assez d'argent. Reviens quand tu auras l'argent !")
-};
-
+    console.log("Achat refusé ! Tu n'as pas assez d'argent. Reviens quand tu auras l'argent !");
+}
 
 console.log("Ton solde est de : " + player_coin_solde + " 🪙 ");
 console.log("Le stock de potion est de : " + sage_pot_stock_solde);
 
+/*---  Liste des potions*/
+
+let pot_liste = ["Soin", " Bouclier", " Reanimation"];
+
+console.log("Liste des potions  : " + pot_liste)
